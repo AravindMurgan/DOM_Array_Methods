@@ -46,7 +46,7 @@ main{
    padding: 0 15px;
 }
 
-h2{
+h2 {
     display: flex;
     justify-content: space-between;
     font-size: 25px;
