@@ -53,6 +53,16 @@ function showOnlyMillionaries(){
     updateDOM();
 
 }
+//calculateWealth//
+function calculateEntireWealth(){
+    const wealth = data.reduce((acc,user)=>(acc + user.money),0);
+    console.log(wealth);
+
+    const div = document.createElement('div');
+    div.classList.add('total');
+    div.innerHTML = `<h3>Total <strong>${formatMoney(wealth)}</strong></h3>`;
+    main.appendChild(div);
+}
 
 
 //addUser//
@@ -94,3 +104,5 @@ doubleMoney.addEventListener('click',doubleUserMoney);
 sortMoney.addEventListener('click',sortByRichest);
 //showMillionaries//
 showMillionaires.addEventListener('click',showOnlyMillionaries);
+//calculateEntireWeatlh//
+calculateWealth.addEventListener('click',calculateEntireWealth);

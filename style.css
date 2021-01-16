@@ -61,4 +61,14 @@ h2 {
     font-size: 20px;
     margin-bottom: 10px;
   }
-  
+
+h3{
+    background-color: #fff;
+    padding: 15px;
+    font-size: 20px;
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between;
+    border-bottom: 1px solid #111;
+
+}
